@@ -1,0 +1,37 @@
+
+
+{% block content %}
+    
+
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/b8iNn43M3xg">
+    </iframe>
+
+    <table id='maintable' class='table'>
+      <!----> 
+        <tr>
+            <th>#</th>
+            {% for name in column_name %}
+            <th>{{ name }} </th>
+            {% endfor %}
+        </tr>
+        <!-- <div class="html5-video-container" data-layer="0"><video tabindex="-1" class="video-stream html5-main-video" webkit-playsinline="" playsinline="" controlslist="nodownload" style="width: 700px; height: 394px; left: 0px; top: 0px;" src="blob:https://www.youtube.com/watch?v=c708Nf0cHrs"></video></div> -->
+    {% for lineitem in data %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ lineitem.name_food }}</td>
+            <td>{{ lineitem.urls_food }}</td>
+            
+        <tr>
+    {% endfor %}
+    <video width="320" height="240" controls>
+        <source src="https://drive.google.com/file/d/1ALaa9Ygidk9IEhHR9eThYcjp-pLMotJN/view?usp=share_link" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+
+{% endblock %}
+    
+
+</body>
+</html>

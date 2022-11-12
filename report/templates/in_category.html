@@ -1,0 +1,17 @@
+{% extends 'app_general/components/base.html' %}
+
+{% block site_title %}{{ in_category.title }} | {% endblock %}
+
+{% block content %}
+{% if in_category is not None %}
+<div>
+    <h4>{{ Category.title }}</h4>
+    <div style="background-color: rgb(244, 179, 250);">
+        <h4><a href="{% url 'in_category' in_category.id %}">{{ in_category.title }}</a></h4>
+        <p>{{ in_category.id }}</p>
+    </div>
+</div>
+{% else %}
+    <p>ไม่พบหมวดหมู่นี้</p>
+{% endif %}
+{% endblock %}

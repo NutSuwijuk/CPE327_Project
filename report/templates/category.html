@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <header style="background-color: lightgray;">
+        <a href= '' >หมวดหมู่</a>
+        <a href= about >เกี่ยวกับ</a>
+    </header>
+
+    <div>
+        <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2>
+        <h3>หมวดหมู่</h3>
+        {% for category in context %}
+            <div style="background-color: rgb(244, 179, 250);">
+                <!-- <h4><a href="{% url 'in_category' in_category.id %}">{{ in_category.title }}</a></h4>
+                <p>{{ in_category.id }}</p> -->
+                <li><a href="#">{{category.title</a></li>  
+            </div>
+            
+        {% empty %}
+            <p>coming soon</p>
+            <li><a href="Person">Person</a></li>
+            <li><a href="General">General</a></li>
+            <li><a href="Number">Number</a></li>
+            <li><a href="Location">Location</a></li>
+            <li><a href="Food">Food</a></li>
+    
+        {% endfor %}
+    </div>
+    
+    <footer style="background-color: lightgray;">
+        <h5>Project in CPE327</h5>
+        <p>
+            <a href='#'>Facebook</a>
+            <a href='#'>Twitter</a>
+        </p>
+        <p>Copyright 2022 Sign_language. All right reserved.</p>
+    </footer>
+</body>
+</html>

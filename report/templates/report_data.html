@@ -1,0 +1,25 @@
+<html>
+<body>
+    {{ invoice }} <br />
+
+    {{ invoice.0.invoice_no }} <br />
+    {{ invoice.0.customer_code_id }} <br />
+
+    {{ invoice_line_item }} <br />
+    {{ invoice_line_item.0.product_code_id }} <br />
+    {{ invoice_line_item.1.product_code_id }} <br />
+
+    {% for lineitem in invoice_line_item %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ lineitem.invoice_no_id }}</td>
+            <td>{{ lineitem.product_code_id }}</td>
+            <td>{{ lineitem.quantity }}</td>
+            <td>{{ lineitem.unit_price }}</td>
+            <td>{{ lineitem.extended_price }}</td>
+        <tr>
+    {% endfor %}
+
+    {{ payment_method}} <br />
+</body>
+</html>
