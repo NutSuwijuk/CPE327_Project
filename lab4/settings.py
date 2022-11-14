@@ -127,16 +127,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # import psycopg2
 
-DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.postgresql_psycopg2',
-'NAME': 'CPE231',
-'USER': 'postgres',
-#'PASSWORD': 'nut3044',
-#'PASSWORD' : '220125',
-#'PASSWORD' : 'P_Supakorn.46',
-'PASSWORD' : 'Cimo1234',
-'HOST': 'localhost',
-'PORT': '',
-}
-}
+# DATABASES = {
+# 'default': {
+# 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+# 'NAME': 'CPE231',
+# 'USER': 'postgres'
+# 'PASSWORD': 'nut3044'
+# # 'PASSWORD' : '220125',
+# # 'PASSWORD' : 'P_Supakorn.46',
+# #'PASSWORD': 'nut3044',
+# 'PASSWORD' : '220125',
+# #'PASSWORD' : 'P_Supakorn.46',
+# >>>>>>> 6391bec1b826cd0d04f832d9eb4d63f9812ea17a
+# # 'PASSWORD' : 'Cimo1234',
+# 'HOST': 'localhost',
+# 'PORT': '',
+# }
+# }
