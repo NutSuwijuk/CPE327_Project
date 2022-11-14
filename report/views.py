@@ -45,6 +45,18 @@ def Food(request):
 
     return render(request, 'food.html')
 
+def Location(request):
+    return render(request, 'location.html')
+
+def Number(request):
+    return render(request, 'number.html')         
+
+def General(request):
+    return render(request, 'general.html')     
+
+def Person(request):
+    return render(request, 'person.html')      
+
 def ReportListAllProducts(request):
 
     dataReport = dict()
