@@ -23,5 +23,9 @@ urlpatterns = [
     path('Food', views.Food),
     path('category',views.Category),
     path('about',views.about),
+    path('Location',views.Location),
+    path('Number',views.Number),
+    path('General',views.General),        
+    path('Person',views.Person),      
     
 ]
