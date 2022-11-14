@@ -119,18 +119,21 @@ def ReportListAllReceipts(request):
 #     #return JsonResponse(dataReport)
 #     return render(request, 'report_data.html', dataReport)
 
+def about(request):
+    return render(request, 'about.html')
+
 def Food(request):
 
-    cursor = connection.cursor()
-    cursor.execute ('SELECT name_food as "Name Food", urls_food as "URLs_Food" '
-                    ' FROM food '
-                    )
-    dataReport = dict()
-    columns = [col[0] for col in cursor.description]
-    data = cursor.fetchall()
-    dataReport['column_name'] = columns
-    dataReport['data'] = CursorToDict(data,columns)
+    # cursor = connection.cursor()
+    # cursor.execute ('SELECT name_food as "Name Food", urls_food as "URLs_Food" '
+    #                 ' FROM food '
+    #                 )
+    # dataReport = dict()
+    # columns = [col[0] for col in cursor.description]
+    # data = cursor.fetchall()
+    # dataReport['column_name'] = columns
+    # dataReport['data'] = CursorToDict(data,columns)
 
-    return render(request, 'food.html', dataReport)
+    return render(request, 'food.html')
 
     
