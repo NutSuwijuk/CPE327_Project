@@ -19,6 +19,7 @@
     <div>
         <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2>
         <h3>หมวดหมู่</h3>
+        <img src="report/static/74.png">
         {% for category in context %}
             <div style="background-color: rgb(244, 179, 250);">
                 <!-- <h4><a href="{% url 'in_category' in_category.id %}">{{ in_category.title }}</a></h4>
@@ -27,7 +28,6 @@
             </div>
             
         {% empty %}
-            <p>coming soon</p>
             <li><a href="Person">Person</a></li>
             <li><a href="General">General</a></li>
             <li><a href="Number">Number</a></li>
