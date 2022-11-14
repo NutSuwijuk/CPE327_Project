@@ -28,6 +28,23 @@ def Category(request):
 #     return JsonResponse(dataReport)
     return render(request, 'category.html')
 
+def about(request):
+    return render(request, 'about.html')
+
+def Food(request):
+
+    # cursor = connection.cursor()
+    # cursor.execute ('SELECT name_food as "Name Food", urls_food as "URLs_Food" '
+    #                 ' FROM food '
+    #                 )
+    # dataReport = dict()
+    # columns = [col[0] for col in cursor.description]
+    # data = cursor.fetchall()
+    # dataReport['column_name'] = columns
+    # dataReport['data'] = CursorToDict(data,columns)
+
+    return render(request, 'food.html')
+
 def ReportListAllProducts(request):
 
     dataReport = dict()
@@ -118,19 +135,5 @@ def ReportListAllReceipts(request):
 #     dataReport['invoice_line_item'] = list(InvoiceLineItem.objects.filter(invoice_no=invoice_no).values())
 #     #return JsonResponse(dataReport)
 #     return render(request, 'report_data.html', dataReport)
-
-def Food(request):
-
-    cursor = connection.cursor()
-    cursor.execute ('SELECT name_food as "Name Food", urls_food as "URLs_Food" '
-                    ' FROM food '
-                    )
-    dataReport = dict()
-    columns = [col[0] for col in cursor.description]
-    data = cursor.fetchall()
-    dataReport['column_name'] = columns
-    dataReport['data'] = CursorToDict(data,columns)
-
-    return render(request, 'food.html', dataReport)
 
     

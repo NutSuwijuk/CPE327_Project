@@ -8,12 +8,12 @@
 </head>
 <body>
     <header style='background-color: pink;'>
-        <a href="#">One for All<a/>
-        <a href="#">ภาษามือเพื่อการสื่อสาร</a>
+        <a href = category>One for All<a/>
+        <a href= category>ภาษามือเพื่อการสื่อสาร</a>
     </header>
     <header style="background-color: lightgray;">
-        <a href= '' >หมวดหมู่</a>
-        <a href= about >เกี่ยวกับ</a>
+        <a href= 'category' >หมวดหมู่</a>
+        <a href= 'about' >เกี่ยวกับ</a>
     </header>
 
     <div>
@@ -23,7 +23,7 @@
             <div style="background-color: rgb(244, 179, 250);">
                 <!-- <h4><a href="{% url 'in_category' in_category.id %}">{{ in_category.title }}</a></h4>
                 <p>{{ in_category.id }}</p> -->
-                <li><a href="#">{{category.title</a></li>  
+                <li><a href="#">{{category.title}}</a></li>  
             </div>
             
         {% empty %}
