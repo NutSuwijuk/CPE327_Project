@@ -133,7 +133,8 @@ DATABASES = {
 'NAME': 'CPE231',
 'USER': 'postgres',
 #'PASSWORD': 'nut3044',
-'PASSWORD' : '220125',
+#'PASSWORD' : '220125',
+'PASSWORD' : 'P_Supakorn.46',
 'HOST': 'localhost',
 'PORT': '',
 }
