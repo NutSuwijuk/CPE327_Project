@@ -14,6 +14,8 @@ class Food(models.Model):
 class Category(models.Model):
     id = models.IntegerField()
     title = models.CharField(max_length=100,primary_key=True)
+
+
     
 # class Data(models.Model):
 #     key = models.CharField(max_length=10,primary_key=True)
