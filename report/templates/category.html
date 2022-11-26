@@ -16,30 +16,25 @@
         <a href= 'about' >เกี่ยวกับ</a>
     </header>
 
-    <div>
+    <div class = "CategoryHead">
         <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2>
         <h3>หมวดหมู่</h3>
-        {% for category in context %}
-            <div style="background-color: rgb(244, 179, 250);">
-                <!-- <h4><a href="{% url 'in_category' in_category.id %}">{{ in_category.title }}</a></h4>
-                <p>{{ in_category.id }}</p> -->
-                <li><a href="#">{{category.title}}</a></li>  
-            </div>
-            
-        {% empty %}
-            <li><a href="Person">Person</a></li>
-                <li><a href="Person"><img src="/static/type/person.png"></a></li>
-            <li><a href="General">General</a></li>
-                <li><a href="General"><img src="/static/type/general.png"></a></li>
-            <li><a href="Number">Number</a></li>
-                <li><a href="Number"><img src="/static/type/number.png" ></a></li>
-            <li><a href="Location">Location</a><li>
-                <li><a href="Location"><img src="/static/type/location.png" ></a></li>
-            <li><a href="Food">Food</a><li>
-                <li><a href="Food"><img src="/static/type/food.png" ></a></li>
-            </a></li>
-    
-        {% endfor %}
+    </div>
+    <div class = "Category1">
+        {% comment %} <li><a href="Person">Person</a></li> {% endcomment %}
+        <span><a href="Person"><img src="/static/type/person.png"></a></span>
+        {% comment %} <li><a href="General">General</a></li> {% endcomment %}
+        <span><a href="General"><img src="/static/type/general.png"></a></span>
+        <span><a href="NormalLife">NormalLife</a><span>
+
+    </div>
+    <div class = "Category2">     
+        {% comment %} <li><a href="Location">Location</a><li> {% endcomment %}
+        <span><a href="Location"><img src="/static/type/location.png" ></a></span>
+        {% comment %} <li><a href="Number">Number</a></li> {% endcomment %}
+        <span><a href="Number"><img src="/static/type/number.png" ></a></span>
+        {% comment %} <li><a href="Food">Food</a><li> {% endcomment %}
+        <span><a href="Food"><img src="/static/type/food.png" ></a></span>
     </div>
     
     <footer style="background-color: lightgray;">
