@@ -53,10 +53,10 @@ def General(request):
     return render(request, 'general.html')     
 
 def Person(request):
-    return render(request, 'person.html')   
+    return render(request, 'person.html') 
 
-def NormalLife(request):
-    return render(request, 'normalLife.html')     
+def Normal(request):
+    return render(request, 'normal.html')        
 
 # def ReportListAllProducts(request):
 
