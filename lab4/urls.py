@@ -26,6 +26,6 @@ urlpatterns = [
     path('Location',views.Location),
     path('Number',views.Number),
     path('General',views.General),        
-    path('Person',views.Person),      
-    
+    path('Person',views.Person),  
+    path('NormalLife',views.NormalLife),
 ]
