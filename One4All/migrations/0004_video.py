@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('report', '0003_auto_20221109_1159'),
+        ('One4All', '0003_auto_20221109_1159'),
     ]
 
     operations = [
