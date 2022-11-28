@@ -27,6 +27,11 @@ urlpatterns = [
     path('Number',views.Number),
     path('General',views.General),        
     path('Person',views.Person),
-    path('NormalLife',views.Normal),          
+    path('NormalLife',views.Normal),     
+    
+    # General
+    path('กระทะ',views.กระทะ),
+    path('เก้าอี้',views.เก้าอี้),
+    path('จาน',views.จาน),   
     
 ]
