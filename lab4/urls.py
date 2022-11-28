@@ -32,6 +32,18 @@ urlpatterns = [
     # General
     path('กระทะ',views.กระทะ),
     path('เก้าอี้',views.เก้าอี้),
-    path('จาน',views.จาน),   
+    path('จาน',views.จาน),  
+    path('ช้อน',views.ช้อน),
+    path('ตะหลิว',views.ตะหลิว),
+    path('ตู้เย็น',views.ตู้เย็น), 
+    path('ทัพพี',views.ทัพพี),
+    path('แปรงสีฟัน',views.แปรงสีฟัน),
+    path('ไม้กวาด',views.ไม้กวาด), 
+    path('ไม้ถูพื้น',views.ไม้ถูพื้น),
+    path('ยาสีฟัน',views.ยาสีฟัน),
+    path('รองเท้า',views.รองเท้า),  
+    path('สบู่',views.สบู่),
+    path('ส้อม',views.ส้อม),
+    path('หม้อ',views.หม้อ), 
     
 ]

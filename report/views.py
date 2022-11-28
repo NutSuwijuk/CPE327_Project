@@ -66,6 +66,45 @@ def เก้าอี้(request):
 
 def จาน(request):
     return render(request, 'general/จาน.html') 
+
+def ช้อน(request):
+    return render(request, 'general/ช้อน.html') 
+
+def ตะหลิว(request):
+    return render(request, 'general/ตะหลิว.html') 
+
+def ตู้เย็น(request):
+    return render(request, 'general/ตู้เย็น.html') 
+
+def ทัพพี(request):
+    return render(request, 'general/ทัพพี.html') 
+
+def แปรงสีฟัน(request):
+    return render(request, 'general/แปรงสีฟัน.html') 
+
+def ไม้กวาด(request):
+    return render(request, 'general/ไม้กวาด.html') 
+
+def ไม้ถูพื้น(request):
+    return render(request, 'general/ไม้ถูพื้น.html') 
+
+def ยาสีฟัน(request):
+    return render(request, 'general/ยาสีฟัน.html') 
+
+def รองเท้า(request):
+    return render(request, 'general/รองเท้า.html') 
+
+def สบู่(request):
+    return render(request, 'general/สบู่.html') 
+
+def ส้อม(request):
+    return render(request, 'general/ส้อม.html') 
+
+def หม้อ(request):
+    return render(request, 'general/หม้อ.html') 
+     
+     
+     
      
 
 # def ReportListAllProducts(request):
