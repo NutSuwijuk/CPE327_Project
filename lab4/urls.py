@@ -26,6 +26,30 @@ urlpatterns = [
     path('Location',views.Location),
     path('Number',views.Number),
     path('General',views.General),        
-    path('Person',views.Person),      
+    path('Person',views.Person),
+    path('NormalLife',views.Normal),     
     
+    # General
+    path('กระทะ',views.กระทะ),
+    path('เก้าอี้',views.เก้าอี้),
+    path('จาน',views.จาน),  
+    path('ช้อน',views.ช้อน),
+    path('ตะหลิว',views.ตะหลิว),
+    path('ตู้เย็น',views.ตู้เย็น), 
+    path('ทัพพี',views.ทัพพี),
+    path('แปรงสีฟัน',views.แปรงสีฟัน),
+    path('ไม้กวาด',views.ไม้กวาด), 
+    path('ไม้ถูพื้น',views.ไม้ถูพื้น),
+    path('ยาสีฟัน',views.ยาสีฟัน),
+    path('รองเท้า',views.รองเท้า),  
+    path('สบู่',views.สบู่),
+    path('ส้อม',views.ส้อม),
+    path('หม้อ',views.หม้อ),
+    
+    #Location
+    path('บ้าน',views.บ้าน),
+    path('โรงเรียน',views.โรงเรียน),
+    path('สถานีตำรวจ',views.สถานีตำรวจ),
+    path('ตลาด',views.ตลาด),
+    path('โรงพยาบาล',views.โรงพยาบาล),
 ]
