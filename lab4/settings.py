@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'report',
+    'One4All',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'lab4.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-# 'NAME': 'CPE327',
+# 'NAME': 'lab4',
 # 'USER': 'postgres',
 # #'PASSWORD': 'nut3044',
 # # 'PASSWORD' : '220125',

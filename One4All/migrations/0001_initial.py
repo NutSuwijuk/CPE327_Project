@@ -90,7 +90,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='InvoiceLineItem',
             fields=[
-                ('invoice_no', models.ForeignKey(db_column='invoice_no', on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='report.invoice')),
+                ('invoice_no', models.ForeignKey(db_column='invoice_no', on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='One4All.invoice')),
                 ('item_no', models.IntegerField()),
                 ('quantity', models.IntegerField(null=True)),
                 ('unit_price', models.FloatField(null=True)),
