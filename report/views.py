@@ -53,7 +53,7 @@ def General(request):
     return render(request, 'general/general.html')     
 
 def Person(request):
-    return render(request, 'person.html') 
+    return render(request, 'person/person.html') 
 
 def Normal(request):
     return render(request, 'normal.html')   
