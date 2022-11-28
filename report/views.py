@@ -50,13 +50,23 @@ def Number(request):
     return render(request, 'number.html')         
 
 def General(request):
-    return render(request, 'general.html')     
+    return render(request, 'general/general.html')     
 
 def Person(request):
     return render(request, 'person.html') 
 
 def Normal(request):
-    return render(request, 'normal.html')        
+    return render(request, 'normal.html')   
+
+def กระทะ(request):
+    return render(request, 'general/กระทะ.html') 
+
+def เก้าอี้(request):
+    return render(request, 'general/เก้าอี้.html') 
+
+def จาน(request):
+    return render(request, 'general/จาน.html') 
+     
 
 # def ReportListAllProducts(request):
 
