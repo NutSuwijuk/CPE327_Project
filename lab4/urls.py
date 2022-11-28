@@ -44,6 +44,12 @@ urlpatterns = [
     path('รองเท้า',views.รองเท้า),  
     path('สบู่',views.สบู่),
     path('ส้อม',views.ส้อม),
-    path('หม้อ',views.หม้อ), 
+    path('หม้อ',views.หม้อ),
     
+    #Location
+    path('บ้าน',views.บ้าน),
+    path('โรงเรียน',views.โรงเรียน),
+    path('สถานีตำรวจ',views.สถานีตำรวจ),
+    path('ตลาด',views.ตลาด),
+    path('โรงพยาบาล',views.โรงพยาบาล),
 ]

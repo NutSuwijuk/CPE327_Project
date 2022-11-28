@@ -44,7 +44,7 @@ def Food(request):
     return render(request, 'food.html')
 
 def Location(request):
-    return render(request, 'location.html')
+    return render(request, 'location/location.html')
 
 def Number(request):
     return render(request, 'number.html')         
@@ -101,7 +101,23 @@ def ส้อม(request):
     return render(request, 'general/ส้อม.html') 
 
 def หม้อ(request):
-    return render(request, 'general/หม้อ.html') 
+    return render(request, 'general/หม้อ.html')
+
+#location
+def บ้าน(request):
+    return render(request, 'location/บ้าน.html')
+
+def โรงเรียน(request):
+    return render(request, 'location/โรงเรียน.html')
+
+def สถานีตำรวจ(request):
+    return render(request, 'location/สถานีตำรวจ.html')
+
+def ตลาด(request):
+    return render(request, 'location/ตลาด.html')
+
+def โรงพยาบาล(request):
+    return render(request, 'location/โรงพยาบาล.html')
      
      
      
