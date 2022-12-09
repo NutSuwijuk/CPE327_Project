@@ -21,3 +21,18 @@
 html{
     font-family: 'Mitr', sans-serif;
 }
+
+/* Global */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body header.top1{
+    background-color: pink;
+}
+
+/* body {
+    color: #333333;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+} */
