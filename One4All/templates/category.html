@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header style='background-color: pink;'>
@@ -15,28 +15,33 @@
         <a href = 'category' >หมวดหมู่</a>
         <a href = 'about' >เกี่ยวกับ</a>
     </header>
+    <center>
+        <div class = "CategoryHead">
+            <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2>
+            <h3>หมวดหมู่</h3>
+        </div>
 
-    <div class = "CategoryHead">
-        <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2>
-        <h3>หมวดหมู่</h3>
-    </div>
-    <div class = "Category1">
-        {% comment %} <li><a href="Person">Person</a></li> {% endcomment %}
-        <span><a href="Person"><img src="/static/type/person.png"></a></span>
-        {% comment %} <li><a href="General">General</a></li> {% endcomment %}
-        <span><a href="General"><img src="/static/type/general.png"></a></span>
-        <span><a href="NormalLife"><img src="/static/type/normal.png"></a><span>
+        <div class = "Category1">
+            {% comment %} <li><a href="Person">Person</a></li> {% endcomment %}
+            <span><a href="Person"><img src="/static/type/person.png"></a></span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            {% comment %} <li><a href="General">General</a></li> {% endcomment %}
+            <span><a href="General"><img src="/static/type/general.png"></a></span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span><a href="NormalLife"><img src="/static/type/normal.png"></a><span>
+        </div>
 
-    </div>
-    <div class = "Category2">     
-        {% comment %} <li><a href="Location">Location</a><li> {% endcomment %}
-        <span><a href="Location"><img src="/static/type/location.png" ></a></span>
-        {% comment %} <li><a href="Number">Number</a></li> {% endcomment %}
-        <span><a href="Number"><img src="/static/type/number.png" ></a></span>
-        {% comment %} <li><a href="Food">Food</a><li> {% endcomment %}
-        <span><a href="Food"><img src="/static/type/food.png" ></a></span>
-    </div>
-    
+        <div class = "Category2">     
+            {% comment %} <li><a href="Location">Location</a><li> {% endcomment %}
+            <span><a href="Location"><img src="/static/type/location.png" ></a></span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            {% comment %} <li><a href="Number">Number</a></li> {% endcomment %}
+            <span><a href="Number"><img src="/static/type/number.png" ></a></span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            {% comment %} <li><a href="Food">Food</a><li> {% endcomment %}
+            <span><a href="Food"><img src="/static/type/food.png" ></a></span>
+        </div>
+    </center>
     <footer style="background-color: lightgray;">
         <h5>Project CPE327 : Software Engineering</h5>
         <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
