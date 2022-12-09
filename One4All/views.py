@@ -8,6 +8,29 @@ from One4All.models import *
 from django.db import connection
 from django.http import JsonResponse
 
+from .models import Video
+
+# all_video = [
+#     {'id': 1, 'title': 'เก้าอี้'},
+#     {'id': 2, 'title': 'กระทะ'}
+# ]
+
+def CursorToDict(data,columns):
+    result = []
+    fieldnames = [name.replace(" ", "_").lower() for name in columns]
+    for row in data:
+        rowset = []
+        for field in zip(fieldnames, row):
+            rowset.append(field)
+        result.append(dict(rowset))
+    return result
+
+def video(request):
+    #Query Data
+    # all_video = Video.objects.all()
+    all_video = Video.objects.order_by('id')
+    context = {'video': all_video}
+    return render(request, 'general.html', context)
 #--------------------Create your views here.----------------------
 
 def Category(request):
@@ -25,8 +48,12 @@ def Location(request):
 def Number(request):
     return render(request, 'number.html')         
 
-def General(request):
-    return render(request, 'general/general.html')     
+# def General(request):
+#     all_video = General.objects.order_by('id')
+#     context = {'video': all_video}
+#     return render(request, 'general.html', context)
+
+    # return render(request, 'general.html')     
 
 def Person(request):
     return render(request, 'person/person.html') 
