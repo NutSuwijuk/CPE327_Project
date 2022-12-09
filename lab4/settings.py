@@ -74,12 +74,13 @@ WSGI_APPLICATION = 'lab4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#import psycopg2 
+import psycopg2 
 
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
 'NAME': 'CPE327Project',
+# 'NAME': 'CPE327_Project',
 'USER': 'postgres',
 # #'PASSWORD': 'nut3044',
 'PASSWORD' : '220125',

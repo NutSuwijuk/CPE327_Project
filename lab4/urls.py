@@ -25,7 +25,7 @@ urlpatterns = [
     path('about',views.about),
     path('Location',views.Location),
     path('Number',views.Number),
-    path('General',views.General),        
+    path('General',views.video),        
     path('Person',views.Person),
     path('NormalLife',views.Normal),     
     
