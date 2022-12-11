@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends 'components/base.html' %}
+{% load static %}
 
-</head>
-<body>
-    <header style='background-color: pink;'>
-        <a href = category>One for All<a/>
-        <a href= category>ภาษามือเพื่อการสื่อสาร</a>
-    </header>
-    <header style="background-color: lightgray;">
-        <a href= category >หมวดหมู่</a>
-        <a href= about >เกี่ยวกับ</a>
-    </header>
-    <div>
-        <!-- <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2> -->
-        <h2>NormalLife</h2>
-    </div>
+{% block site_title %}NormalLife{% endblock %}
+
+<center>
+    <h2 >" Normal Life "</h2>
+</center>
 
 <!-- {% block content %}
     <iframe width="420" height="345" src="https://www.youtube.com/embed/b8iNn43M3xg">
@@ -74,12 +61,3 @@
 
 <iframe src="https://drive.google.com/file/d/1xkwCFubz85Z3iz5RpD7-EEg5t40dH9lk/preview" width="640" height="480" allow="autoplay"></iframe>
 <h3>ส้ม</h3> -->
-
-<footer style="background-color: lightgray;">
-    <h5>Project CPE327 : Software Engineering</h5>
-    <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
-    <p>Copyright 2022 Sign_language. All right reserved.</p>
-</footer>
-
-</body>
-</html>
