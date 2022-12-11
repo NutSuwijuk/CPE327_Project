@@ -1,14 +1,36 @@
-{% extends 'components/base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 templates</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="static/test_Bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/test_person.css">
+</head>
 
-{% block site_title %}General{% endblock %}
+<body>
 
-{% block content %}
+<!-- หัว   -->
+  <nav class="py-2 bg1 border-bottom">
+    <div class="container1 d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2 active" aria-current="page">One for All</a></li>
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2">ภาษามือเพื่อการสื่อสาร</a></li>
+      </ul>
+    </div>
+  </nav>
+
 <!-- Cards -->
   <div class="container">
 
     <div class="text-center">
-      <p class="lead fw-bold mb-4">บุคคล - Person</p> 
+      <p class="py-5 lead fw-bold mb-4">บุคคล - Person</p> 
 
     <div class="grid-container">
       <div class="card" style="background-image:url('/static/person/me.png');">
@@ -95,16 +117,16 @@
       <div class="card" style="background-image:url('/static/person/elderly.png');">
       </div>
  
-
-
     </div>
 
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto" src="/static/Botton/home.png" alt="" width="102" height="87">
+    </div>
+
     </div>
 
     </div>
   </div>
 
-{% endblock %}
+</body>
+</html>
