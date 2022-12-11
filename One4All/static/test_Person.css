@@ -8,14 +8,21 @@
 
 .bg1 {
     background: #E76F51;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 15px; */
 }
 
 .nav {
     background: #E9C46A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    margin-left: 29px;
+    margin-right: 29px;
+}
+
+.nav:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 .bg2 {
@@ -31,8 +38,6 @@
 .bg4 {
     background: #e6e6e6;
 }
-
-
 /* card */
 
 .container {
@@ -54,6 +59,7 @@
     background-position: center;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 20px;
 }
 .content {
     transform: translateX(-250px);
