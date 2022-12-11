@@ -121,4 +121,8 @@ def ตลาด(request):
 
 def โรงพยาบาล(request):
     return render(request, 'location/โรงพยาบาล.html')
-    
+
+
+# สำหรับเทส 
+def test(request):
+    return render(request, 'test_Category.html')
