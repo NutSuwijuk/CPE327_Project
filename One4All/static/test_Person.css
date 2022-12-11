@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mitr;
+
+}  
+
+.bg1 {
+    background: #E76F51;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.nav {
+    background: #E9C46A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.bg2 {
+    background: #f7f3e7;
+}
+
+.bg3 {
+    background: #F9EECD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.bg4 {
+    background: #e6e6e6;
+}
+
+
+/* card */
+
+.container {
+    background: #F9EECD;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+.card {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.content {
+    transform: translateX(-250px);
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.card:hover .content {
+    transform: translateX(0);
+}
+.content h3 {
+    line-height: 40px;
+}
+.content button {
+    margin: 15px 0;
+    padding: 7px 20px;
+    background: none;
+    border-radius: 5px;
+    border: solid 1px #151515;
+    cursor: pointer;
+}
+.content button:hover {
+    background: #151515;
+    color: #fff;
+}
+.content p {
+    opacity: 0.4;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 468px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+  
+
+
+    
+/* .header{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(100%);
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+}
+     */
+/* .header::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://images.unsplash.com/photo-1504214208698-ea1916a2195a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: center;
+} */
+
+/* a {
+    color: rgb(236, 60, 60);
+} */
