@@ -5,37 +5,55 @@
 
 {% block content %}
 
-<center>
-  <h2 >" General "</h2>
+<!-- Cards -->
+  <div class="container">
 
-  {% for video in video %}
-      <!-- Picture Prev and Next Button -->
-    <!-- <center>
-      <div>
-          <button type="button" > <a href="{{video.title}}"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
-          <span><img src="{{video.image}}" ></span>
-          <button type="button" > <a href="ตะหลิว"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
-      </div>
+    <div class="text-center ">
+      <p class="py-4 lead fw-bold mb-3">ของใช้ทั่วไป - General</p> 
 
-      <iframe src="{{video.link}}" width="640" height="480" allow="autoplay"></iframe>
-    </center> -->
-    <!-- <tr> {{video.id}} </tr>
-    <tr> {{video.title}} </tr>
-    <tr> {{video.link}} </tr>
-    <tr> {{video.image}} </tr> -->
+    <div class="grid-container">
+      <a href="กระทะ">
+      <div class="card" style="background-image:url('/static/General/กระทะ.png');"></div>
+      </a>
 
-      <!-- block -->
-    <div class = "General1">     
-        <!-- <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span> -->
-        <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span>
+      <a href="เก้าอี้">
+      <div class="card" style="background-image:url('/static/General/เก้าอี้.png');"></div>
+      </a>
+
+      <a href="จาน">
+      <div class="card" style="background-image:url('/static/General/จาน.png');"></div>
+      </a>
+
+      <a href="ช้อน">
+      <div class="card" style="background-image:url('/static/General/ช้อน.png');"></div>
+      </a>
+
+      <a href="ตะหลิว">      
+      <div class="card" style="background-image:url('/static/General/ตะหลิว.png');"></div>
+      </a>
+
+      <a href="ตู้เย็น">      
+        <div class="card" style="background-image:url('/static/General/ตู้เย็น.png');"></div>
+        </a>
+
+      <a href="ทัพพี">      
+        <div class="card" style="background-image:url('/static/General/ทัพพี.png');"></div>
+        </a>
+      
+      <a href="แปรงสีฟัน">      
+        <div class="card" style="background-image:url('/static/General/แปรงสีฟัน.png');"></div>
+        </a>
+      
+
     </div>
-  {% endfor %}
 
-  <div style= "background-color: aquamarine;">
-    <p>{{ video.title }}</p>
-    <p>{{ video.link }}</p>
-  </div>  
+    <div class="py-5 text-center">
+      {% comment %} <img class="d-block mx-auto" src="/static/Botton/home.png" alt="" width="102" height="87"> {% endcomment %}
+      <button class="button_home" type="button" > <a href="category"><img src="/static/Botton/home.png" alt="" width="90" height="90" > </a></button>
+    </div>
 
-</center>
+    </div>
+    </div>
+  </div>
 
 {% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'components/sub_base.html' %}
+{% load static %}
+
+{% block site_title %}Location{% endblock %}
+
+{% block content %}
+    
+    <!-- Picture -->
+    <div>
+        <span><img src="/static/General/แปรงสีฟัน.png" ></span>
+    </div>
+
+    <!-- Video -->
+    <iframe src="https://drive.google.com/file/d/1UMg1M3jtCgJUwi0dA3IUb_EbA-h9G-SR/preview" width="640" height="480" allow="autoplay"></iframe>
+
+    <!-- Prev and Next Button-->
+    <div>
+        <button type="button" > <a href="ทัพพี"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
+        <button type="button" > <a href="ไม้กวาด"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
+    </div>
+
+    {% endblock %}

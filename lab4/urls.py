@@ -25,7 +25,7 @@ urlpatterns = [
     path('about',views.about),
     path('Location',views.Location),
     path('Number',views.Number),
-    path('general1/',views.general1),        
+    path('General/',views.General),        
     path('Person',views.Person),
     path('NormalLife',views.Normal),    
     # path('General/<str:video_title>', views.video),
@@ -62,14 +62,14 @@ urlpatterns = [
 
     
     # General
-    path('กระทะ',views.กระทะ),
-    path('เก้าอี้',views.เก้าอี้),
-    path('จาน',views.จาน),  
-    path('ช้อน',views.ช้อน),
-    path('ตะหลิว',views.ตะหลิว),
-    path('ตู้เย็น',views.ตู้เย็น), 
-    path('ทัพพี',views.ทัพพี),
-    path('แปรงสีฟัน',views.แปรงสีฟัน),
+    path('General/กระทะ',views.กระทะ),
+    path('General/เก้าอี้',views.เก้าอี้),
+    path('General/จาน',views.จาน),  
+    path('General/ช้อน',views.ช้อน),
+    path('General/ตะหลิว',views.ตะหลิว),
+    path('General/ตู้เย็น',views.ตู้เย็น), 
+    path('General/ทัพพี',views.ทัพพี),
+    path('General/แปรงสีฟัน',views.แปรงสีฟัน),
     
     #Location
     path('บ้าน',views.บ้าน),

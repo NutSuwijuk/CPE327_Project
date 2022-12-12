@@ -1,0 +1,22 @@
+{% extends 'components/sub_base.html' %}
+{% load static %}
+
+{% block site_title %}Location{% endblock %}
+
+{% block content %}
+    
+    <!-- Picture -->
+    <div>
+        <span><img src="/static/General/ตู้เย็น.png" ></span>
+    </div>
+
+    <!-- Video -->
+    <iframe src="https://drive.google.com/file/d/1m4VMSE21S95eYdqRAiGHr3PMit0Gj3N6/preview" width="640" height="480" allow="autoplay"></iframe>
+
+    <!-- Prev and Next Button-->
+    <div>
+        <button type="button" > <a href="ตะหลิว"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
+        <button type="button" > <a href="ทัพพี"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
+    </div>
+
+    {% endblock %}

@@ -54,8 +54,11 @@ def Food(request):
 def Location(request):
     return render(request, 'location.html')
 
-def general1(request):
-    return render(request, 'general1.html')   
+# def general1(request):
+#     return render(request, 'general1.html')   
+
+def General(request):
+    return render(request, 'general.html')   
 
 def กระทะ(request):
     return render(request, 'general1/กระทะ.html')
