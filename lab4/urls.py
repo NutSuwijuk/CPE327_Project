@@ -27,7 +27,7 @@ urlpatterns = [
     path('Number',views.Number),
     path('General/',views.videos),        
     path('Person',views.Person),
-    path('NormalLife',views.Normal),    
+    path('NormalLife',views.normal),    
     path('General/<str:video_title>', views.video),
 
     #person--------------------------------------------
@@ -62,21 +62,21 @@ urlpatterns = [
 
     
     # General
-    path('กระทะ',views.กระทะ),
-    path('เก้าอี้',views.เก้าอี้),
-    path('จาน',views.จาน),  
-    path('ช้อน',views.ช้อน),
-    path('ตะหลิว',views.ตะหลิว),
-    path('ตู้เย็น',views.ตู้เย็น), 
-    path('ทัพพี',views.ทัพพี),
-    path('แปรงสีฟัน',views.แปรงสีฟัน),
-    path('ไม้กวาด',views.ไม้กวาด), 
-    path('ไม้ถูพื้น',views.ไม้ถูพื้น),
-    path('ยาสีฟัน',views.ยาสีฟัน),
-    path('รองเท้า',views.รองเท้า),  
-    path('สบู่',views.สบู่),
-    path('ส้อม',views.ส้อม),
-    path('หม้อ',views.หม้อ),
+    # path('กระทะ',views.กระทะ),
+    # path('เก้าอี้',views.เก้าอี้),
+    # path('จาน',views.จาน),  
+    # path('ช้อน',views.ช้อน),
+    # path('ตะหลิว',views.ตะหลิว),
+    # path('ตู้เย็น',views.ตู้เย็น), 
+    # path('ทัพพี',views.ทัพพี),
+    # path('แปรงสีฟัน',views.แปรงสีฟัน),
+    # path('ไม้กวาด',views.ไม้กวาด), 
+    # path('ไม้ถูพื้น',views.ไม้ถูพื้น),
+    # path('ยาสีฟัน',views.ยาสีฟัน),
+    # path('รองเท้า',views.รองเท้า),  
+    # path('สบู่',views.สบู่),
+    # path('ส้อม',views.ส้อม),
+    # path('หม้อ',views.หม้อ),
     
     #Location
     path('บ้าน',views.บ้าน),
@@ -89,7 +89,33 @@ urlpatterns = [
     path('บวก',views.บวก),   
 
     #Food
-    path('ข้าว',views.ข้าว),
-    path('ต้นข้าว',views.ต้นข้าว),
+    path('rice',views.rice),
+    path('orange',views.orange),
+    path('mango',views.mango),
+    path('longan',views.longan),
+    path('watermelon',views.watermelon),
+    path('durian',views.durian),
+    path('cucumber',views.cucumber),
+    path('cabbage',views.cabbage),
+    path('lettuce',views.lettuce),
+    path('morning',views.morning),
+
+    #normal
+    path('pay',views.pay),
+    path('sorry',views.sorry),
+    path('thank',views.thank),
+    path('sad',views.sad),
+    path('luck',views.luck),
+    path('ill',views.ill),
+    path('well',views.well),
+    path('like',views.like),
+    path('dislike',views.dislike),
+    path('love',views.love),
+    path('hungry',views.hungry),
+    path('eat',views.eat),
+    path('sleep',views.sleep),
+    path('go',views.go),
+    path('come',views.come),
+
 
 ]

@@ -149,54 +149,54 @@ def elderly(request):
 def monk(request):
     return render(request, 'person/monk.html')
 
-#normal------------------------------------------
-def Normal(request):
+#Normal------------------------------------------
+def normal(request):
     return render(request, 'normal.html')   
 
-def กระทะ(request):
-    return render(request, 'general/กระทะ.html') 
+def pay(request):
+    return render(request, 'normalLife/pay.html') 
 
-def เก้าอี้(request):
-    return render(request, 'general/เก้าอี้.html') 
+def sorry(request):
+    return render(request, 'normalLife/sorry.html') 
 
-def จาน(request):
-    return render(request, 'general/จาน.html') 
+def thank(request):
+    return render(request, 'normalLife/thank.html') 
 
-def ช้อน(request):
-    return render(request, 'general/ช้อน.html') 
+def sad(request):
+    return render(request, 'normalLife/sad.html') 
 
-def ตะหลิว(request):
-    return render(request, 'general/ตะหลิว.html') 
+def luck(request):
+    return render(request, 'normalLife/luck.html') 
 
-def ตู้เย็น(request):
-    return render(request, 'general/ตู้เย็น.html') 
+def ill(request):
+    return render(request, 'normalLife/ill.html') 
 
-def ทัพพี(request):
-    return render(request, 'general/ทัพพี.html') 
+def well(request):
+    return render(request, 'normalLife/well.html') 
 
-def แปรงสีฟัน(request):
-    return render(request, 'general/แปรงสีฟัน.html') 
+def like(request):
+    return render(request, 'normalLife/like.html') 
 
-def ไม้กวาด(request):
-    return render(request, 'general/ไม้กวาด.html') 
+def dislike(request):
+    return render(request, 'normalLife/dislike.html') 
 
-def ไม้ถูพื้น(request):
-    return render(request, 'general/ไม้ถูพื้น.html') 
+def love(request):
+    return render(request, 'normalLife/love.html') 
 
-def ยาสีฟัน(request):
-    return render(request, 'general/ยาสีฟัน.html') 
+def hungry(request):
+    return render(request, 'normalLife/hungry.html') 
 
-def รองเท้า(request):
-    return render(request, 'general/รองเท้า.html') 
+def eat(request):
+    return render(request, 'normalLife/eat.html') 
 
-def สบู่(request):
-    return render(request, 'general/สบู่.html') 
+def sleep(request):
+    return render(request, 'normalLife/sleep.html') 
 
-def ส้อม(request):
-    return render(request, 'general/ส้อม.html') 
+def go(request):
+    return render(request, 'normalLife/go.html') 
 
-def หม้อ(request):
-    return render(request, 'general/หม้อ.html')
+def come(request):
+    return render(request, 'normalLife/come.html')
 
 #location
 def บ้าน(request):
@@ -220,11 +220,38 @@ def test(request):
     return render(request, 'test_Category.html')
 
 #Food
-def ข้าว(request):
-    return render(request, 'food/ข้าว.html')
+def Food(request):
+    return render(request, 'food.html')
 
-def ต้นข้าว(request):
-    return render(request, 'food/ต้นข้าว.html')
+def rice(request):
+    return render(request, 'food/rice.html')
+
+def orange(request):
+    return render(request, 'food/orange.html')
+
+def mango(request):
+    return render(request, 'food/mango.html')
+
+def longan(request):
+    return render(request, 'food/longan.html')
+
+def watermelon(request):
+    return render(request, 'food/watermelon.html')
+
+def durian(request):
+    return render(request, 'food/durian.html')
+
+def cucumber(request):
+    return render(request, 'food/cucumber.html')
+
+def cabbage(request):
+    return render(request, 'food/cabbage.html')
+
+def lettuce(request):
+    return render(request, 'food/lettuce.html')
+
+def morning(request):
+    return render(request, 'food/morning.html')
 
 #number
 def Number(request):
