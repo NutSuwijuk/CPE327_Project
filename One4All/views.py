@@ -10,27 +10,43 @@ from django.http import JsonResponse
 
 from .models import Video
 
-# all_video = [
-#     {'id': 1, 'title': 'เก้าอี้'},
-#     {'id': 2, 'title': 'กระทะ'}
-# ]
 
-def CursorToDict(data,columns):
-    result = []
-    fieldnames = [name.replace(" ", "_").lower() for name in columns]
-    for row in data:
-        rowset = []
-        for field in zip(fieldnames, row):
-            rowset.append(field)
-        result.append(dict(rowset))
-    return result
+# def CursorToDict(data,columns):
+#     result = []
+#     fieldnames = [name.replace(" ", "_").lower() for name in columns]
+#     for row in data:
+#         rowset = []
+#         for field in zip(fieldnames, row):
+#             rowset.append(field)
+#         result.append(dict(rowset))
+#     return result
 
-def video(request):
+def videos(request):
     #Query Data
     # all_video = Video.objects.all()
     all_video = Video.objects.order_by('id')
     context = {'video': all_video}
     return render(request, 'general.html', context)
+
+# def videos(request):
+#     #Query Data
+#     # all_video = Video.objects.all()
+#     all_video = Video.objects.order_by('id')
+#     context = {'video': all_video}
+#     return render(request, 'general.html', context)
+
+def Video(request, video_title):
+#     one_video = [f for f in all_vi]
+    # return HttpResponse('ads')
+    one_video = Video.objects.get(title=video_title)
+    context = {'video_title':one_video}
+    return render(request, 'generals.html', context)
+
+def bt_next(request):
+    next_video = Video.objects.get(id=1)
+    context = {'video': next_video}
+    return render(request, 'general.html', context)
+
 #--------------------Create your views here.----------------------
 
 def Category(request):
