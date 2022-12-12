@@ -9,18 +9,21 @@ from django.db import connection
 from django.http import JsonResponse
 
 from .models import Video
-from .models import Person
 
+# all_video = [
+#     {'id': 1, 'title': 'เก้าอี้'},
+#     {'id': 2, 'title': 'กระทะ'}
+# ]
 
-# def CursorToDict(data,columns):
-#     result = []
-#     fieldnames = [name.replace(" ", "_").lower() for name in columns]
-#     for row in data:
-#         rowset = []
-#         for field in zip(fieldnames, row):
-#             rowset.append(field)
-#         result.append(dict(rowset))
-#     return result
+def CursorToDict(data,columns):
+    result = []
+    fieldnames = [name.replace(" ", "_").lower() for name in columns]
+    for row in data:
+        rowset = []
+        for field in zip(fieldnames, row):
+            rowset.append(field)
+        result.append(dict(rowset))
+    return result
 
 def videos(request):
     #Query Data
@@ -29,31 +32,14 @@ def videos(request):
     context = {'video': all_video}
     return render(request, 'general.html', context)
 
-# def videos(request):
-#     #Query Data
-#     # all_video = Video.objects.all()
-#     all_video = Video.objects.order_by('id')
-#     context = {'video': all_video}
-#     return render(request, 'general.html', context)
-
-def Video(request, video_title):
-#     one_video = [f for f in all_vi]
-    # return HttpResponse('ads')
-    one_video = Video.objects.get(title=video_title)
-    context = {'video_title':one_video}
-    return render(request, 'generals.html', context)
-
-def bt_next(request):
-    next_video = Video.objects.get(id=1)
-    context = {'video': next_video}
-    return render(request, 'general.html', context)
-
-def person(request):
+def video(request, video_title):
     #Query Data
     # all_video = Video.objects.all()
-    all_video = Person.objects.order_by('no')
-    context = {'person': all_video}
-    return render(request, 'person.html', context)
+    one_video = Video.objects.get(title = video_title)
+    context = {'video': one_video}
+    return render(request, 'generals.html', context)
+
+
 #--------------------Create your views here.----------------------
 
 def Category(request):
@@ -76,11 +62,97 @@ def Number(request):
 #     context = {'video': all_video}
 #     return render(request, 'general.html', context)
 
-    # return render(request, 'general.html')     
-
+    # return render(request, 'general.html')   
+  
+#person ---------------------------------------
 def Person(request):
-    return render(request, 'person.html') 
+    return render(request, 'person.html')
 
+def me(request):
+    return render(request, 'person/me.html')
+
+def you(request):
+    return render(request, 'person/you.html')
+
+def she(request):
+    return render(request, 'person/she.html')
+
+def we(request):
+    return render(request, 'person/we.html')
+
+def they(request):
+    return render(request, 'person/they.html')
+
+def dad(request):
+    return render(request, 'person/dad.html')
+
+def mom(request):
+    return render(request, 'person/mom.html')
+
+def baby(request):
+    return render(request, 'person/baby.html')
+
+def man(request):
+    return render(request, 'person/man.html')
+
+def woman(request):
+    return render(request, 'person/woman.html')
+
+def grandfather(request):
+    return render(request, 'person/grandfather.html')
+
+def grandmother(request):
+    return render(request, 'person/grandmother.html')
+
+def grandfather2(request):
+    return render(request, 'person/grandfather2.html')
+
+def grandmother2(request):
+    return render(request, 'person/grandmother2.html')
+
+def uncle(request):
+    return render(request, 'person/uncle.html')
+
+def aunt(request):
+    return render(request, 'person/aunt.html')
+
+def aunt2(request):
+    return render(request, 'person/aunt2.html')
+
+def aucle(request):
+    return render(request, 'person/aucle.html')
+
+def grandchild(request):
+    return render(request, 'person/grandchild.html')
+
+def oldbro(request):
+    return render(request, 'person/oldbro.html')
+
+def youngbro(request):
+    return render(request, 'person/youngbro.html')
+
+def oldsis(request):
+    return render(request, 'person/oldsis.html')
+
+def youngsis(request):
+    return render(request, 'person/youngsis.html')
+
+def child(request):
+    return render(request, 'person/child.html')
+
+def teenager(request):
+    return render(request, 'person/teenager.html')
+
+def adult(request):
+    return render(request, 'person/adult.html')
+
+def elderly(request):
+    return render(request, 'person/elderly.html')
+
+def monk(request):
+    return render(request, 'person/monk.html')
+
+#normal------------------------------------------
 def Normal(request):
     return render(request, 'normal.html')   
 
@@ -149,3 +221,19 @@ def โรงพยาบาล(request):
 # สำหรับเทส 
 def test(request):
     return render(request, 'test_Category.html')
+
+#Food
+def ข้าว(request):
+    return render(request, 'food/ข้าว.html')
+
+def ต้นข้าว(request):
+    return render(request, 'food/ต้นข้าว.html')
+
+def สถานีตำรวจ(request):
+    return render(request, 'location/สถานีตำรวจ.html')
+
+def ตลาด(request):
+    return render(request, 'location/ตลาด.html')
+
+def โรงพยาบาล(request):
+    return render(request, 'location/โรงพยาบาล.html')

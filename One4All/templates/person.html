@@ -1,162 +1,129 @@
-{% extends 'components/base.html' %}
+{% extends 'components/sub_base.html' %}
 {% load static %}
 
 {% block site_title %}General{% endblock %}
 
 {% block content %}
 
-<center>
-  <h2 >" Person "</h2>
-  {% for person in person %}
-      <!-- Picture Prev and Next Button -->
-    <!-- <center>
-      <div>
-          <button type="button" > <a href="{{video.title}}"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
-          <span><img src="{{video.image}}" ></span>
-          <button type="button" > <a href="ตะหลิว"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
-          <iframe src="{{video.link}}" width="640" height="480" allow="autoplay"></iframe>
-    </center> -->
-    <!-- <tr> {{video.id}} </tr>
-    <tr> {{video.title}} </tr>
-    <tr> {{video.link}} </tr>
-    <tr> {{video.image}} </tr> -->
-    <!-- block -->
-    <div class = "Person">     
-      <!-- <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span> -->
-      <span><a href="{{person.title}}"><img src="{{person.image}}" ></a></span>
-    </div>
-
-  {% endfor %}
-
-  <div style= "background-color: aquamarine;">
-    <p>{{ person.title }}</p>
-    <p>{{ person.link }}</p>
-  </div>
-
-</center>
-
-{% endblock %}
-
-{% comment %} <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 5 templates</title>
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="static/test_Bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="static/test_Person.css">
-
-</head>
-
-<body> {% endcomment %}
-
-<!-- หัว   -->
-  {% comment %} <nav class="py-2 bg1 border-bottom">
-    <div class="container1 d-flex flex-wrap">
-      <ul class="nav me-auto">
-        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2 active" aria-current="page">One for All</a></li>
-        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
-      </ul>
-      <ul class="nav">
-        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
-        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2">ภาษามือเพื่อการสื่อสาร</a></li>
-      </ul>
-    </div>
-  </nav> {% endcomment %}
-
 <!-- Cards -->
-  {% comment %} <div class="container">
+  <div class="container">
 
     <div class="text-center ">
       <p class="py-4 lead fw-bold mb-3">บุคคล - Person</p> 
 
     <div class="grid-container">
-      <div class="card" style="background-image:url('/static/person/me.png');">
-      </div>
+      <a href="me">
+        <div class="card" style="background-image:url('/static/person/me.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/you.png');">
-      </div>
+      <a href="you">
+        <div class="card" style="background-image:url('/static/person/you.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/she.png');">
-      </div>
+      <a href="she">
+        <div class="card" style="background-image:url('/static/person/she.png');"></div>
+      </a> 
 
-      <div class="card" style="background-image:url('/static/person/we.png');">
-      </div>
+      <a href="we">
+        <div class="card" style="background-image:url('/static/person/we.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/they.png');">
-      </div>
+      <a href="they">
+        <div class="card" style="background-image:url('/static/person/they.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/oldbro.png');">
-      </div>
+      <a href="dad">
+        <div class="card" style="background-image:url('/static/person/dad.png');"></div>
+      </a>
+  
+      <a href="mom">
+        <div class="card" style="background-image:url('/static/person/mom.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/dad.png');">
-      </div>
+      <a href="baby">
+        <div class="card" style="background-image:url('/static/person/baby.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/mom.png');">
-      </div>
+      <a href="man">
+        <div class="card" style="background-image:url('/static/person/man.png');"></div>
+      </a>
+  
+      <a href="woman">
+        <div class="card" style="background-image:url('/static/person/woman.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/baby.png');">
-      </div>
+      <a href="grandfather">
+        <div class="card" style="background-image:url('/static/person/grandfather.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/man.png');">
-      </div>
+      <a href="grandmother">
+        <div class="card" style="background-image:url('/static/person/grandmother.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/woman.png');">
-      </div>
+      <a href="grandfather2">
+        <div class="card" style="background-image:url('/static/person/grandfather2.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/youngbro.png');">
-      </div>
+      <a href="grandmother2">
+        <div class="card" style="background-image:url('/static/person/grandmother2.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/grandfather.png');">
-      </div>
+      <a href="uncle">
+        <div class="card" style="background-image:url('/static/person/uncle.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/grandmother.png');">
-      </div>
+      <a href="aunt">
+        <div class="card" style="background-image:url('/static/person/aunt.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/grandfather2.png');">
-      </div>
+      <a href="aunt2">
+        <div class="card" style="background-image:url('/static/person/aunt2.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/grandmother2.png');">
-      </div>
+      <a href="auncle">
+        <div class="card" style="background-image:url('/static/person/auncle.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/uncle.png');">
-      </div>
+      <a href="grandchild">
+        <div class="card" style="background-image:url('/static/person/grandchild.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/oldsis.png');">
-      </div>
+      <a href="oldbro">
+        <div class="card" style="background-image:url('/static/person/oldbro.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/aunt.png');">
-      </div>
+      <a href="youngbro">
+        <div class="card" style="background-image:url('/static/person/youngbro.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/aunt2.png');">
-      </div>
+      <a href="oldsis">
+        <div class="card" style="background-image:url('/static/person/oldsis.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/auncle.png');">
-      </div>
+      <a href="youngsis">
+        <div class="card" style="background-image:url('/static/person/youngsis.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/grandchild.png');">
-      </div>
+      <a href="child">
+        <div class="card" style="background-image:url('/static/person/child.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/monk.png');">
-      </div>
+      <a href="teenager">
+        <div class="card" style="background-image:url('/static/person/teenager.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/youngsis.png');">
-      </div>
+      <a href="adult">
+        <div class="card" style="background-image:url('/static/person/adult.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/child.png');">
-      </div>
+      <a href="elderly">
+        <div class="card" style="background-image:url('/static/person/elderly.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/teenager.png');">
-      </div>
+      <a href="monk">
+        <div class="card" style="background-image:url('/static/person/monk.png');"></div>
+      </a>
 
-      <div class="card" style="background-image:url('/static/person/adult.png');">
-      </div>
-
-      <div class="card" style="background-image:url('/static/person/elderly.png');">
-      </div>
- 
     </div>
 
     <div class="py-5 text-center">
@@ -174,28 +141,6 @@
 
     </div>
     </div>
-  </div> {% endcomment %}
+  </div>
 
-
-
-<!-- Credit -->
-  {% comment %} <div class="bg2 text-secondary px-4 py-4 text-center">
-    <p>Project CPE327 : Software Engineering</p>
-    <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
-    <p>Copyright 2022 Sign_language. All right reserved.</p> {% endcomment %}
-        <!-- <div class="py-5">
-          <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
-            </div>
-          </div>
-        </div> -->
-  {% comment %} </div> {% endcomment %}
-
-  {% comment %} <script src="js/bootstrap.min.js"></script>
-</body>
-
-</html> {% endcomment %}
+{% endblock %}
