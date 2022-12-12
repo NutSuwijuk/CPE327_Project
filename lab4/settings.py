@@ -80,7 +80,7 @@ DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
 'NAME': 'CPE327Project',
-#'NAME': 'CPE327_Project',
+# 'NAME': 'CPE327_Project',
 'USER': 'postgres',
 #'PASSWORD': 'nut3044',
 'PASSWORD' : '220125',
