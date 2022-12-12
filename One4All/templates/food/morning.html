@@ -1,0 +1,24 @@
+{% extends 'components/sub_base.html' %}
+{% load static %}
+
+{% block site_title %}Food{% endblock %}
+
+{% block content %}
+
+<!-- Picture and Button and Video Link-->
+<center>
+    <div>
+        <span><button class="button" type="button" > <a href="lettuce"><img src="/static/Botton/left.png" width="100" height="100" > </a></button></span>
+        <span><img src="/static/food/11morning.png" width="170" height="170" ></span>
+    </div>
+
+    <iframe src="https://drive.google.com/file/d/1ngCmNjZpaKOyyOrxHrtQ0Uy6RJHHj7Wz/preview"  width="640" height="480" allow="autoplay" ></iframe>
+
+    <div>
+        <button  class="button" type="button" > <a href="category"><img src="/static/Botton/home.png" width="120" height="120" > </a></button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button class="button" type="button" > <a href="Food"><img src="/static/Botton/back.png" width="120" height="120" > </a></button>
+    </div>
+</center>
+
+{% endblock %}
