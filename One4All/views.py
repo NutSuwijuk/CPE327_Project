@@ -59,11 +59,97 @@ def Location(request):
 #     context = {'video': all_video}
 #     return render(request, 'general.html', context)
 
-    # return render(request, 'general.html')     
-
+    # return render(request, 'general.html')   
+  
+#person ---------------------------------------
 def Person(request):
-    return render(request, 'person.html') 
+    return render(request, 'person.html')
 
+def me(request):
+    return render(request, 'person/me.html')
+
+def you(request):
+    return render(request, 'person/you.html')
+
+def she(request):
+    return render(request, 'person/she.html')
+
+def we(request):
+    return render(request, 'person/we.html')
+
+def they(request):
+    return render(request, 'person/they.html')
+
+def dad(request):
+    return render(request, 'person/dad.html')
+
+def mom(request):
+    return render(request, 'person/mom.html')
+
+def baby(request):
+    return render(request, 'person/baby.html')
+
+def man(request):
+    return render(request, 'person/man.html')
+
+def woman(request):
+    return render(request, 'person/woman.html')
+
+def grandfather(request):
+    return render(request, 'person/grandfather.html')
+
+def grandmother(request):
+    return render(request, 'person/grandmother.html')
+
+def grandfather2(request):
+    return render(request, 'person/grandfather2.html')
+
+def grandmother2(request):
+    return render(request, 'person/grandmother2.html')
+
+def uncle(request):
+    return render(request, 'person/uncle.html')
+
+def aunt(request):
+    return render(request, 'person/aunt.html')
+
+def aunt2(request):
+    return render(request, 'person/aunt2.html')
+
+def aucle(request):
+    return render(request, 'person/aucle.html')
+
+def grandchild(request):
+    return render(request, 'person/grandchild.html')
+
+def oldbro(request):
+    return render(request, 'person/oldbro.html')
+
+def youngbro(request):
+    return render(request, 'person/youngbro.html')
+
+def oldsis(request):
+    return render(request, 'person/oldsis.html')
+
+def youngsis(request):
+    return render(request, 'person/youngsis.html')
+
+def child(request):
+    return render(request, 'person/child.html')
+
+def teenager(request):
+    return render(request, 'person/teenager.html')
+
+def adult(request):
+    return render(request, 'person/adult.html')
+
+def elderly(request):
+    return render(request, 'person/elderly.html')
+
+def monk(request):
+    return render(request, 'person/monk.html')
+
+#normal------------------------------------------
 def Normal(request):
     return render(request, 'normal.html')   
 

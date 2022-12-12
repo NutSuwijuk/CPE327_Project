@@ -29,6 +29,37 @@ urlpatterns = [
     path('Person',views.Person),
     path('NormalLife',views.Normal),    
     path('General/<str:video_title>', views.video),
+
+    #person--------------------------------------------
+    path('me',views.me),
+    path('you', views.you),
+    path('she', views.she),
+    path('we', views.we),
+    path('they', views.they),
+    path('dad', views.dad),
+    path('mom', views.mom),
+    path('baby', views.baby),
+    path('man', views.man),
+    path('woman', views.woman),
+    path('grandfather', views.grandfather),
+    path('grandmother', views.grandmother),
+    path('grandfather2', views.grandfather2),
+    path('grandmother2', views.grandmother2),
+    path('uncle', views.uncle),
+    path('aunt', views.aunt),
+    path('aunt2', views.aunt2),
+    path('aucle', views.aucle),
+    path('grandchild', views.grandchild),
+    path('oldbro', views.oldbro),
+    path('youngbro', views.youngbro),
+    path('oldsis', views.oldsis),
+    path('youngsis', views.youngsis),
+    path('child', views.child),
+    path('teenager', views.teenager),
+    path('adult', views.adult),
+    path('elderly', views.elderly),
+    path('monk', views.monk),
+
     
     # General
     path('กระทะ',views.กระทะ),
@@ -56,5 +87,9 @@ urlpatterns = [
 
     #number
     path('บวก',views.บวก),   
+
+    #Food
+    path('ข้าว',views.ข้าว),
+    path('ต้นข้าว',views.ต้นข้าว),
 
 ]
