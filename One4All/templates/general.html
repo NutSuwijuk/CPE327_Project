@@ -1,4 +1,4 @@
-{% extends 'components/base.html' %}
+{% extends 'components/sub_base.html' %}
 {% load static %}
 
 {% block site_title %}General{% endblock %}
@@ -7,31 +7,34 @@
 
 <center>
   <h2 >" General "</h2>
-  {% for video in videos %}
+
+  {% for video in video %}
       <!-- Picture Prev and Next Button -->
     <!-- <center>
       <div>
           <button type="button" > <a href="{{video.title}}"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
           <span><img src="{{video.image}}" ></span>
           <button type="button" > <a href="ตะหลิว"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
-          <iframe src="{{video.link}}" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+
+      <iframe src="{{video.link}}" width="640" height="480" allow="autoplay"></iframe>
     </center> -->
     <!-- <tr> {{video.id}} </tr>
     <tr> {{video.title}} </tr>
     <tr> {{video.link}} </tr>
     <tr> {{video.image}} </tr> -->
-    <!-- block -->
-    <div class = "General1">     
-      <!-- <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span> -->
-      <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span>
-    </div>
 
+      <!-- block -->
+    <div class = "General1">     
+        <!-- <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span> -->
+        <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span>
+    </div>
   {% endfor %}
 
   <div style= "background-color: aquamarine;">
     <p>{{ video.title }}</p>
     <p>{{ video.link }}</p>
-  </div>
+  </div>  
 
 </center>
 

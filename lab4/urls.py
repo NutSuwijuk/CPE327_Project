@@ -26,12 +26,9 @@ urlpatterns = [
     path('Location',views.Location),
     path('Number',views.Number),
     path('General/',views.videos),        
-    # path('Person',views.Person),
-    # path('NormalLife',views.Normal),     
-    # path('General/',views.videos),        
     path('Person',views.Person),
-    path('NormalLife',views.Normal),   
-    path('<str:video_title>', views.Video),  
+    path('NormalLife',views.Normal),    
+    path('General/<str:video_title>', views.video),
     
     # General
     path('กระทะ',views.กระทะ),
@@ -56,4 +53,8 @@ urlpatterns = [
     path('สถานีตำรวจ',views.สถานีตำรวจ),
     path('ตลาด',views.ตลาด),
     path('โรงพยาบาล',views.โรงพยาบาล),
+
+    #number
+    path('บวก',views.บวก),   
+
 ]
