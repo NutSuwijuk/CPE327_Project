@@ -4,90 +4,111 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Bootstrap 5 templates</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="static/test_Bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/test_Food.css">
+
 </head>
+
 <body>
-    <header style='background-color: pink;'>
-        <a href = category>One for All<a/>
-        <a href= category>ภาษามือเพื่อการสื่อสาร</a>
-    </header>
-    <header style="background-color: lightgray;">
-        <a href= category >หมวดหมู่</a>
-        <a href= about >เกี่ยวกับ</a>
-    </header>
-    <div>
-        <!-- <h2>วิดีโอคลิปสอนภาษามือสำหรับผู้พิการทางการได้ยิน</h2> -->
-        <h2>Food</h2>
+
+<!-- หัว   -->
+  <nav class="py-2 bg1 border-bottom">
+    <div class="container1 d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2 active" aria-current="page">One for All</a></li>
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2">ภาษามือเพื่อการสื่อสาร</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Cards -->
+  <div class="container">
+
+    <div class="text-center ">
+      <p class="py-4 lead fw-bold mb-3">ผักผลไม้ - Food and Vegetable</p> 
+
+    <div class="grid-container">
+      <div class="card" style="background-image:url('/static/food/1rice.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/2rice(tree).png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/3orange.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/4mango.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/5longan.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/6watermelon.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/7durian.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/8cucumber.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/9cabbage.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/10lettuce.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/food/11morning.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/person/youngbro.png');">
+      </div>
+
     </div>
 
-<!-- {% block content %}
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/b8iNn43M3xg">
-    </iframe>
-    <iframe src="https://drive.google.com/file/d/1ALaa9Ygidk9IEhHR9eThYcjp-pLMotJN/preview" width="640" height="480" allow="autoplay"></iframe>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto" src="/static/Botton/home.png" alt="" width="102" height="87">
+    </div>
 
-    <table id='maintable' class='table'>
-      
-        <tr>
-            <th>#</th>
-            {% for name in column_name %}
-            <th>{{ name }} </th>
-            {% endfor %}
-        </tr>
-        
-        {% for lineitem in data %}
-        <tr>
-            <td>{{ forloop.counter }}</td>
-            <td>{{ lineitem.name_food }}</td>
-            <td>{{ lineitem.urls_food }}</td>            
-        <tr>
-        {% endfor %}
+    </div>
 
-{% endblock %} -->
-    
-<!-- <yt-image alt="" ftl-eligible="" notify-on-loaded="" notify-on-unloaded="" class="style-scope ytd-thumbnail"><img alt="" style="background-color: transparent;" class="yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/NFXPALvjcL8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDLwKcq7RE-RyxfA0otkrcUsaqWgw"></yt-image>
-<yt-img-shadow ftl-eligible="" class="style-scope ytd-thumbnail" disable-upgrade="" hidden="">
-</yt-img-shadow> -->
-
-<a href="default.asp">
-    <img src="/static/food/food (9).png" alt="HTML tutorial">
-</a>
-<!-- <iframe src="https://drive.google.com/file/d/1q4HLZ8YzolTGT1R66B5m-tjOu1CNeT4l/preview" width="640" height="480" allow="autoplay"></iframe> -->
-
-<iframe src="https://drive.google.com/file/d/1OEL4es-PlTDj7e3kUa7JrzwOVKaabnnV/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>กะหล่ำปลี</h3>
-
-<iframe src="https://drive.google.com/file/d/1cJzwNYAjWk51ukgC4rpuxB4HK8VF-SEt/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>ข้าว</h3>
-
-<iframe src="https://drive.google.com/file/d/1ALvigfNrixZORQragLHhdybl0iTZbfM5/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>แตงกวา</h3>
-
-<iframe src="https://drive.google.com/file/d/1GcRj_Bnl4ekOu8Nyykb2eb6OkVGkDfDz/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>แตงโม</h3>
-
-<iframe src="https://drive.google.com/file/d/1JddX0tiE05MUq46P1Jq986xNvsmrR8kY/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>ทุเรียน</h3>
-
-<iframe src="https://drive.google.com/file/d/1lMxrIGXHmyLEibISoR6YjxorDXL__1dp/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>ผักกาดขาวปลี</h3>
-
-<iframe src="https://drive.google.com/file/d/1ngCmNjZpaKOyyOrxHrtQ0Uy6RJHHj7Wz/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>ผักบุ้ง</h3>
-
-<iframe src="https://drive.google.com/file/d/1sMPx2AtMSZqEZtLzZZl2vdaz7cEpKt9z/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>มะม่วง</h3>
-
-<iframe src="https://drive.google.com/file/d/1Ss73TGiwY6UPMMCX6RzT6nE9ovEI0AF7/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>ลำไย</h3>
-
-<iframe src="https://drive.google.com/file/d/1xkwCFubz85Z3iz5RpD7-EEg5t40dH9lk/preview" width="640" height="480" allow="autoplay"></iframe>
-<h3>ส้ม</h3>
-
-<footer style="background-color: lightgray;">
-    <h5>Project CPE327 : Software Engineering</h5>
-    <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
-    <p>Copyright 2022 Sign_language. All right reserved.</p>
-</footer>
+    </div>
+  </div>
 
 </body>
+
+
+
+    </div>
+    </div>
+  </div>
+
+
+
+<!-- Credit -->
+  <div class="bg2 text-secondary px-4 py-4 text-center">
+    <p>Project CPE327 : Software Engineering</p>
+    <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
+    <p>Copyright 2022 Sign_language. All right reserved.</p>
+        <!-- <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+        </div> -->
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
