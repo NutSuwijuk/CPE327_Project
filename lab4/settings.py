@@ -79,13 +79,13 @@ import psycopg2
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-# 'NAME': 'CPE327Project',
-'NAME': 'CPE327_Project',
+'NAME': 'CPE327Project',
+# 'NAME': 'CPE327_Project',
 'USER': 'postgres',
 # 'PASSWORD': 'nut3044',
-# 'PASSWORD' : '220125',
+'PASSWORD' : '220125',
 # 'PASSWORD' : 'P_Supakorn.46',
-'PASSWORD' : 'Cimo1234',
+# 'PASSWORD' : 'Cimo1234',
 # # 'PASSWORD' : '7222',
 'HOST': 'localhost',
 'PORT': '',
