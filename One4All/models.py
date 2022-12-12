@@ -18,9 +18,11 @@ class Video(models.Model):
 #     def __str__(self):
 #         return self.name_food
         
-class Category(models.Model):
-    id = models.IntegerField()
-    title = models.CharField(max_length=100,primary_key=True)
+class Person(models.Model):
+    no = models.FloatField()
+    title = models.CharField(max_length=50, blank=True)
+    link = models.CharField(max_length=100, blank=True)
+    image = models.CharField(max_length=100, null=True, blank=True)
 # ============================================================================================================
 
 

@@ -8,3 +8,4 @@ class VideoAdmin(admin.ModelAdmin):
     list_display = ["title", "link", "image"]
     search_fields = ["title"]
 admin.site.register(Video, VideoAdmin)
+
