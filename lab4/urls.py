@@ -25,10 +25,10 @@ urlpatterns = [
     path('about',views.about),
     path('Location',views.Location),
     path('Number',views.Number),
-    path('General/',views.videos),        
+    path('general1/',views.general1),        
     path('Person',views.Person),
     path('NormalLife',views.Normal),    
-    path('General/<str:video_title>', views.video),
+    # path('General/<str:video_title>', views.video),
 
     #person--------------------------------------------
     path('me',views.me),

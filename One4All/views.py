@@ -25,19 +25,19 @@ def CursorToDict(data,columns):
         result.append(dict(rowset))
     return result
 
-def videos(request):
+# def videos(request):
     #Query Data
     # all_video = Video.objects.all()
-    all_video = Video.objects.order_by('id')
-    context = {'video': all_video}
-    return render(request, 'general.html', context)
+    # all_video = Video.objects.order_by('id')
+    # context = {'video': all_video}
+    # return render(request, 'general.html', context)
 
-def video(request, video_title):
+# def video(request, video_title):
     #Query Data
     # all_video = Video.objects.all()
-    one_video = Video.objects.get(title = video_title)
-    context = {'video': one_video}
-    return render(request, 'generals.html', context)
+    # one_video = Video.objects.get(title = video_title)
+    # context = {'video': one_video}
+    # return render(request, 'generals.html', context)
 
 
 #--------------------Create your views here.----------------------
@@ -52,7 +52,10 @@ def Food(request):
     return render(request, 'food.html')
 
 def Location(request):
-    return render(request, 'location.html')        
+    return render(request, 'location.html')
+
+def general1(request):
+    return render(request, 'general1.html')       
 
 # def General(request):
 #     all_video = General.objects.order_by('id')
