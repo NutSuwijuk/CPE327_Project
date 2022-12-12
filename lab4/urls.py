@@ -27,7 +27,7 @@ urlpatterns = [
     path('Number',views.Number),
     path('General/',views.videos),        
     path('Person',views.Person),
-    path('NormalLife',views.normal),    
+    path('NormalLife',views.Normal),    
     path('General/<str:video_title>', views.video),
 
     #person--------------------------------------------
