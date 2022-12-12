@@ -1,41 +1,132 @@
-{% extends 'components/base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 templates</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="static/test_Bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/test_Person.css">
 
-{% block site_title %}General{% endblock %}
+</head>
 
-{% block content %}
+<body>
 
-<center>
-  <h2 >" General "</h2>
+<!-- หัว   -->
+  <nav class="py-2 bg1 border-bottom">
+    <div class="container1 d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2 active" aria-current="page">One for All</a></li>
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2"></a></li>
+        <li class="nav-item"><a href="/category" class="nav-link link-dark px-2">ภาษามือเพื่อการสื่อสาร</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  {% for video in video %}
-      <!-- Picture Prev and Next Button -->
-    <!-- <center>
-      <div>
-          <button type="button" > <a href="{{video.title}}"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
-          <span><img src="{{video.image}}" ></span>
-          <button type="button" > <a href="ตะหลิว"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
+<!-- Cards -->
+  <div class="container">
+
+    <div class="text-center ">
+      <p class="py-4 lead fw-bold mb-3">ของใช้ทั่วไป - General use</p> 
+
+    <div class="grid-container">
+      <div class="card" style="background-image:url('/static/General/1ไม้กวาด.png');">
       </div>
 
-      <iframe src="{{video.link}}" width="640" height="480" allow="autoplay"></iframe>
-    </center> -->
-    <!-- <tr> {{video.id}} </tr>
-    <tr> {{video.title}} </tr>
-    <tr> {{video.link}} </tr>
-    <tr> {{video.image}} </tr> -->
+      <div class="card" style="background-image:url('/static/General/2ไม้ถูพื้น.png');">
+      </div>
 
-      <!-- block -->
-    <div class = "General1">     
-        <!-- <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span> -->
-        <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span>
+      <div class="card" style="background-image:url('/static/General/3แปรงสีฟัน.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/4ยาสีฟัน.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/5น้ำยาซักผ้า.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/6สบู่.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/7ยาสระผม.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/8รองเท้า.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/9เก้าอี้.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/10จาน.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/11ถ้วย.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/12ช้อน.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/13ส้อม.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/14ตู้เย็น.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/15กระทะ.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/16ตะหลิว.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/17หม้อ.png');">
+      </div>
+
+      <div class="card" style="background-image:url('/static/General/18ทัพพี.png');">
+      </div>
+ 
     </div>
-  {% endfor %}
 
-  <div style= "background-color: aquamarine;">
-    <p>{{ video.title }}</p>
-    <p>{{ video.link }}</p>
-  </div>  
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto" src="/static/Botton/home.png" alt="" width="102" height="87">
+    </div>
 
-</center>
+    </div>
 
-{% endblock %}
+    </div>
+  </div>
+
+</body>
+
+
+
+    </div>
+    </div>
+  </div>
+
+
+
+<!-- Credit -->
+  <div class="bg2 text-secondary px-4 py-4 text-center">
+    <p>Project CPE327 : Software Engineering</p>
+    <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
+    <p>Copyright 2022 Sign_language. All right reserved.</p>
+        <!-- <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+        </div> -->
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
