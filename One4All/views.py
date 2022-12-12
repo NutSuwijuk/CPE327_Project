@@ -153,7 +153,7 @@ def monk(request):
     return render(request, 'person/monk.html')
 
 #Normal------------------------------------------
-def normal(request):
+def Normal(request):
     return render(request, 'normal.html')   
 
 def pay(request):
