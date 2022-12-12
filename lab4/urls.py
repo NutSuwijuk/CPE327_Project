@@ -86,10 +86,41 @@ urlpatterns = [
     path('โรงพยาบาล',views.โรงพยาบาล),
 
     #number
-    path('บวก',views.บวก),   
+    path('A1บวก',views.A1บวก),
+    path('A2ลบ',views.A2ลบ),
+    path('A3คูณ',views.A3คูณ),
+    path('A4หาร',views.A4หาร),
+    path('A5เท่ากับ',views.A5เท่ากับ),
+    path('0',views.N0),
+    path('1',views.N1),
+    path('2',views.N2),
+    path('3',views.N3),
+    path('4',views.N4),
+    path('5',views.N5),
+    path('6',views.N6),
+    path('7',views.N7),
+    path('8',views.N8),
+    path('9',views.N9),
+    path('10',views.N10),
+    path('11',views.N11),
+    path('12',views.N12),
+    path('13',views.N13),
+    path('14',views.N14),
+    path('15',views.N15),
+    path('20',views.N20),
+    path('30',views.N30),
+    path('40',views.N40),
+    path('50',views.N50),
+    path('60',views.N60),
+    path('70',views.N70),
+    path('80',views.N80),
+    path('90',views.N90),
+    path('100',views.N100),
+    path('500',views.N500),
+    path('1000',views.N1000),
 
     #Food
     path('ข้าว',views.ข้าว),
-    path('ต้นข้าว',views.ต้นข้าว),
+
 
 ]

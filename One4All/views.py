@@ -230,5 +230,98 @@ def ต้นข้าว(request):
 def Number(request):
     return render(request, 'number.html') 
 
-def บวก(request):
-    return render(request, 'numbers/บวก.html')
+def A1บวก(request):
+    return render(request, 'numbers/A1บวก.html')
+
+def A2ลบ(request):
+    return render(request, 'numbers/A2ลบ.html')
+
+def A3คูณ(request):
+    return render(request, 'numbers/A3คูณ.html')
+
+def A4หาร(request):
+    return render(request, 'numbers/A4หาร.html')
+
+def A5เท่ากับ(request):
+    return render(request, 'numbers/A5เท่ากับ.html')
+
+def N0(request):
+    return render(request, 'numbers/0.html')
+
+def N1(request):
+    return render(request, 'numbers/1.html')
+
+def N2(request):
+    return render(request, 'numbers/2.html')
+
+def N3(request):
+    return render(request, 'numbers/3.html')
+
+def N4(request):
+    return render(request, 'numbers/4.html')
+
+def N5(request):
+    return render(request, 'numbers/5.html')
+
+def N6(request):
+    return render(request, 'numbers/6.html')
+
+def N7(request):
+    return render(request, 'numbers/7.html')
+
+def N8(request):
+    return render(request, 'numbers/8.html')
+
+def N9(request):
+    return render(request, 'numbers/9.html')
+
+def N10(request):
+    return render(request, 'numbers/10.html')
+
+def N11(request):
+    return render(request, 'numbers/11.html')
+
+def N12(request):
+    return render(request, 'numbers/12.html')
+
+def N13(request):
+    return render(request, 'numbers/13.html')
+
+def N14(request):
+    return render(request, 'numbers/14.html')
+
+def N15(request):
+    return render(request, 'numbers/15.html')
+
+def N20(request):
+    return render(request, 'numbers/20.html')
+
+def N30(request):
+    return render(request, 'numbers/30.html')
+
+def N40(request):
+    return render(request, 'numbers/40.html')
+
+def N50(request):
+    return render(request, 'numbers/50.html')
+
+def N60(request):
+    return render(request, 'numbers/60.html')
+
+def N70(request):
+    return render(request, 'numbers/70.html')
+
+def N80(request):
+    return render(request, 'numbers/80.html')
+
+def N90(request):
+    return render(request, 'numbers/90.html')
+
+def N100(request):
+    return render(request, 'numbers/100.html')
+
+def N500(request):
+    return render(request, 'numbers/500.html')
+
+def N1000(request):
+    return render(request, 'numbers/1000.html')
