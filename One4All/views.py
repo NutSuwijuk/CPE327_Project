@@ -9,6 +9,7 @@ from django.db import connection
 from django.http import JsonResponse
 
 from .models import Video
+from .models import Person
 
 # all_video = [
 #     {'id': 1, 'title': 'เก้าอี้'},
@@ -31,6 +32,13 @@ def video(request):
     all_video = Video.objects.order_by('id')
     context = {'video': all_video}
     return render(request, 'general.html', context)
+
+def person(request):
+    #Query Data
+    # all_video = Video.objects.all()
+    all_video = Person.objects.order_by('no')
+    context = {'person': all_video}
+    return render(request, 'person.html', context)
 #--------------------Create your views here.----------------------
 
 def Category(request):
@@ -43,7 +51,7 @@ def Food(request):
     return render(request, 'food.html')
 
 def Location(request):
-    return render(request, 'location/location.html')
+    return render(request, 'location.html')
 
 def Number(request):
     return render(request, 'number.html')         
