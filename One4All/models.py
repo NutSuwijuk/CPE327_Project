@@ -19,7 +19,7 @@ class Video(models.Model):
 #         return self.name_food
         
 class Person(models.Model):
-    no = models.FloatField()
+    no = models.IntegerField()
     title = models.CharField(max_length=50, blank=True)
     link = models.CharField(max_length=100, blank=True)
     image = models.CharField(max_length=100, null=True, blank=True)

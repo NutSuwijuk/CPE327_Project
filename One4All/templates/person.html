@@ -1,4 +1,43 @@
-<!DOCTYPE html>
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block site_title %}General{% endblock %}
+
+{% block content %}
+
+<center>
+  <h2 >" Person "</h2>
+  {% for person in person %}
+      <!-- Picture Prev and Next Button -->
+    <!-- <center>
+      <div>
+          <button type="button" > <a href="{{video.title}}"><img src="/static/Botton/left.png" width="120" height="120" > </a></button>
+          <span><img src="{{video.image}}" ></span>
+          <button type="button" > <a href="ตะหลิว"><img src="/static/Botton/right.png" width="120" height="120" > </a></button>
+          <iframe src="{{video.link}}" width="640" height="480" allow="autoplay"></iframe>
+    </center> -->
+    <!-- <tr> {{video.id}} </tr>
+    <tr> {{video.title}} </tr>
+    <tr> {{video.link}} </tr>
+    <tr> {{video.image}} </tr> -->
+    <!-- block -->
+    <div class = "Person">     
+      <!-- <span><a href="{{video.title}}"><img src="{{video.image}}" ></a></span> -->
+      <span><a href="{{person.title}}"><img src="{{person.image}}" ></a></span>
+    </div>
+
+  {% endfor %}
+
+  <div style= "background-color: aquamarine;">
+    <p>{{ person.title }}</p>
+    <p>{{ person.link }}</p>
+  </div>
+
+</center>
+
+{% endblock %}
+
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -11,10 +50,10 @@
 
 </head>
 
-<body>
+<body> {% endcomment %}
 
 <!-- หัว   -->
-  <nav class="py-2 bg1 border-bottom">
+  {% comment %} <nav class="py-2 bg1 border-bottom">
     <div class="container1 d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><a href="/category" class="nav-link link-dark px-2 active" aria-current="page">One for All</a></li>
@@ -25,10 +64,10 @@
         <li class="nav-item"><a href="/category" class="nav-link link-dark px-2">ภาษามือเพื่อการสื่อสาร</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> {% endcomment %}
 
 <!-- Cards -->
-  <div class="container">
+  {% comment %} <div class="container">
 
     <div class="text-center ">
       <p class="py-4 lead fw-bold mb-3">บุคคล - Person</p> 
@@ -135,15 +174,15 @@
 
     </div>
     </div>
-  </div>
+  </div> {% endcomment %}
 
 
 
 <!-- Credit -->
-  <div class="bg2 text-secondary px-4 py-4 text-center">
+  {% comment %} <div class="bg2 text-secondary px-4 py-4 text-center">
     <p>Project CPE327 : Software Engineering</p>
     <p>นักศึกษาชั้นปีที่ 3 : Computer engineerign, KMUTT</p>
-    <p>Copyright 2022 Sign_language. All right reserved.</p>
+    <p>Copyright 2022 Sign_language. All right reserved.</p> {% endcomment %}
         <!-- <div class="py-5">
           <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
           <div class="col-lg-6 mx-auto">
@@ -154,9 +193,9 @@
             </div>
           </div>
         </div> -->
-  </div>
+  {% comment %} </div> {% endcomment %}
 
-  <script src="js/bootstrap.min.js"></script>
+  {% comment %} <script src="js/bootstrap.min.js"></script>
 </body>
 
-</html>
+</html> {% endcomment %}
