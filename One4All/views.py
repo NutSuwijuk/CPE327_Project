@@ -157,49 +157,49 @@ def Normal(request):
     return render(request, 'normal.html')   
 
 def pay(request):
-    return render(request, 'normalLife/pay.html') 
+    return render(request, 'normal/pay.html') 
 
 def sorry(request):
-    return render(request, 'normalLife/sorry.html') 
+    return render(request, 'normal/sorry.html') 
 
 def thank(request):
-    return render(request, 'normalLife/thank.html') 
+    return render(request, 'normal/thank.html') 
 
 def sad(request):
-    return render(request, 'normalLife/sad.html') 
+    return render(request, 'normal/sad.html') 
 
 def luck(request):
-    return render(request, 'normalLife/luck.html') 
+    return render(request, 'normal/luck.html') 
 
 def ill(request):
-    return render(request, 'normalLife/ill.html') 
+    return render(request, 'normal/ill.html') 
 
 def well(request):
-    return render(request, 'normalLife/well.html') 
+    return render(request, 'normal/well.html') 
 
 def like(request):
-    return render(request, 'normalLife/like.html') 
+    return render(request, 'normal/like.html') 
 
 def dislike(request):
-    return render(request, 'normalLife/dislike.html') 
+    return render(request, 'normal/dislike.html') 
 
 def love(request):
-    return render(request, 'normalLife/love.html') 
+    return render(request, 'normal/love.html') 
 
 def hungry(request):
-    return render(request, 'normalLife/hungry.html') 
+    return render(request, 'normal/hungry.html') 
 
 def eat(request):
-    return render(request, 'normalLife/eat.html') 
+    return render(request, 'normal/eat.html') 
 
 def sleep(request):
-    return render(request, 'normalLife/sleep.html') 
+    return render(request, 'normal/sleep.html') 
 
 def go(request):
-    return render(request, 'normalLife/go.html') 
+    return render(request, 'normal/go.html') 
 
 def come(request):
-    return render(request, 'normalLife/come.html')
+    return render(request, 'normal/come.html')
 
 #location
 def บ้าน(request):
