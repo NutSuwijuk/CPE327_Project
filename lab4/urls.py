@@ -25,9 +25,13 @@ urlpatterns = [
     path('about',views.about),
     path('Location',views.Location),
     path('Number',views.Number),
-    path('General',views.video),        
+    path('General/',views.videos),        
+    # path('Person',views.Person),
+    # path('NormalLife',views.Normal),     
+    # path('General/',views.videos),        
     path('Person',views.Person),
-    path('NormalLife',views.Normal),     
+    path('NormalLife',views.Normal),   
+    path('<str:video_title>', views.Video),  
     
     # General
     path('กระทะ',views.กระทะ),
