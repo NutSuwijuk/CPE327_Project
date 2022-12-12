@@ -55,14 +55,33 @@ def Location(request):
     return render(request, 'location.html')
 
 def general1(request):
-    return render(request, 'general1.html')       
+    return render(request, 'general1.html')   
 
-# def General(request):
-#     all_video = General.objects.order_by('id')
-#     context = {'video': all_video}
-#     return render(request, 'general.html', context)
+def กระทะ(request):
+    return render(request, 'general1/กระทะ.html')
 
-    # return render(request, 'general.html')   
+def เก้าอี้(request):
+    return render(request, 'general1/เก้าอี้.html')
+
+def จาน(request):
+    return render(request, 'general1/จาน.html')
+
+def ช้อน(request):
+    return render(request, 'general1/ช้อน.html')
+
+def ตะหลิว(request):
+    return render(request, 'general1/ตะหลิว.html')
+
+def ตู้เย็น(request):
+    return render(request, 'general1/ตู้เย็น.html')
+
+def ทัพพี(request):
+    return render(request, 'general1/ทัพพี.html')
+
+def แปรงสีฟัน(request):
+    return render(request, 'general1/แปรงสีฟัน.html')   
+
+
   
 #person ---------------------------------------
 def Person(request):
