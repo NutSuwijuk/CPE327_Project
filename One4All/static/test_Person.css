@@ -108,7 +108,12 @@
 }
   
 .mx-auto{
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
-
+.button_home{
+    border-bottom: 15px;
+    border-top: 15px;
+    border-left: 15px;
+    border-right: 15px;
+}
