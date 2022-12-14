@@ -28,9 +28,8 @@ urlpatterns = [
     path('General/',views.General),        
     path('Person',views.Person),
     path('NormalLife',views.Normal),    
-    # path('General/<str:video_title>', views.video),
 
-    #person--------------------------------------------
+    #-------------person-----------------------
     path('me',views.me),
     path('you', views.you),
     path('she', views.she),
@@ -61,7 +60,7 @@ urlpatterns = [
     path('monk', views.monk),
 
     
-    # General
+    #--------------General------------------
     path('General/กระทะ',views.กระทะ),
     path('General/เก้าอี้',views.เก้าอี้),
     path('General/จาน',views.จาน),  
@@ -71,14 +70,14 @@ urlpatterns = [
     path('General/ทัพพี',views.ทัพพี),
     path('General/แปรงสีฟัน',views.แปรงสีฟัน),
     
-    #Location
+    #---------------Location------------------
     path('บ้าน',views.บ้าน),
     path('โรงเรียน',views.โรงเรียน),
     path('สถานีตำรวจ',views.สถานีตำรวจ),
     path('ตลาด',views.ตลาด),
     path('โรงพยาบาล',views.โรงพยาบาล),
 
-    #number
+    #---------------number-----------------
     path('A1บวก',views.A1บวก),
     path('A2ลบ',views.A2ลบ),
     path('A3คูณ',views.A3คูณ),
@@ -111,7 +110,7 @@ urlpatterns = [
     path('N100',views.N100),
     path('N1000',views.N1000),
 
-    #Food
+    #--------------------Food-------------------
     path('rice',views.rice),
     path('orange',views.orange),
     path('mango',views.mango),
@@ -123,7 +122,7 @@ urlpatterns = [
     path('lettuce',views.lettuce),
     path('morning',views.morning),
 
-    #normal
+    #------------------normal----------------------
     path('pay',views.pay),
     path('sorry',views.sorry),
     path('thank',views.thank),
@@ -139,6 +138,5 @@ urlpatterns = [
     path('sleep',views.sleep),
     path('go',views.go),
     path('come',views.come),
-
 
 ]
