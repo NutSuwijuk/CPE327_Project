@@ -10,11 +10,6 @@ from django.http import JsonResponse
 
 from .models import Video
 
-# all_video = [
-#     {'id': 1, 'title': 'เก้าอี้'},
-#     {'id': 2, 'title': 'กระทะ'}
-# ]
-
 def CursorToDict(data,columns):
     result = []
     fieldnames = [name.replace(" ", "_").lower() for name in columns]
@@ -25,23 +20,7 @@ def CursorToDict(data,columns):
         result.append(dict(rowset))
     return result
 
-# def videos(request):
-    #Query Data
-    # all_video = Video.objects.all()
-    # all_video = Video.objects.order_by('id')
-    # context = {'video': all_video}
-    # return render(request, 'general.html', context)
-
-# def video(request, video_title):
-    #Query Data
-    # all_video = Video.objects.all()
-    # one_video = Video.objects.get(title = video_title)
-    # context = {'video': one_video}
-    # return render(request, 'generals.html', context)
-
-
-#--------------------Create your views here.----------------------
-
+#----------------------------main category---------------------------------------------
 def Category(request):
     return render(request, 'category.html')
 
@@ -52,14 +31,21 @@ def Food(request):
     return render(request, 'food.html')
 
 def Location(request):
-    return render(request, 'location.html')
-
-# def general1(request):
-#     return render(request, 'general1.html')   
+    return render(request, 'location.html')  
 
 def General(request):
-    return render(request, 'general.html')   
+    return render(request, 'general.html')  
 
+def Person(request):
+    return render(request, 'person.html')
+
+def Normal(request):
+    return render(request, 'normal.html')
+
+def Food(request):
+    return render(request, 'food.html')
+
+#---------------------------------General--------------------------------------------------
 def กระทะ(request):
     return render(request, 'general1/กระทะ.html')
 
@@ -83,13 +69,8 @@ def ทัพพี(request):
 
 def แปรงสีฟัน(request):
     return render(request, 'general1/แปรงสีฟัน.html')   
-
-
   
-#person ---------------------------------------
-def Person(request):
-    return render(request, 'person.html')
-
+#--------------------------------person ---------------------------------------
 def me(request):
     return render(request, 'person/me.html')
 
@@ -174,10 +155,7 @@ def elderly(request):
 def monk(request):
     return render(request, 'person/monk.html')
 
-#Normal------------------------------------------
-def Normal(request):
-    return render(request, 'normal.html')   
-
+#---------------------------------Normal------------------------------------------ 
 def pay(request):
     return render(request, 'normal/pay.html') 
 
@@ -240,14 +218,11 @@ def โรงพยาบาล(request):
     return render(request, 'location/โรงพยาบาล.html')
 
 
-# สำหรับเทส 
+#-------------------------for test----------------------------------------------------------
 def test(request):
     return render(request, 'test_Category.html')
 
-#Food
-def Food(request):
-    return render(request, 'food.html')
-
+#--------------------------Food-----------------------------------------------------------
 def rice(request):
     return render(request, 'food/rice.html')
 
@@ -278,7 +253,7 @@ def lettuce(request):
 def morning(request):
     return render(request, 'food/morning.html')
 
-#number
+#---------------------------number--------------------------------------------------------------
 def Number(request):
     return render(request, 'number.html') 
 
